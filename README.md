@@ -1,98 +1,116 @@
-Aşağıda daha “clean”, modern və GitHub üçün professional görünən README hazırladım:
+# 🧮 Algorithms for CE & CS
+
+![Java](https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Algorithms](https://img.shields.io/badge/Algorithms-8-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Open-green?style=for-the-badge)
+
+A clean, well-organized collection of fundamental algorithms implemented in **Java** — built for Computer Engineering and Computer Science students who want to learn by reading real code.
+
+> **Why this repo?** Each file is a standalone, runnable program. No boilerplate, no frameworks — just pure algorithmic logic you can study, run, and modify.
 
 ---
 
-# Algorithms-For-CE-and-CS
-
-A curated collection of essential algorithms implemented in **Java** for Computer Engineering and Computer Science students.
-
-This repository focuses on clarity, simplicity, and learning core problem-solving techniques through well-structured code.
-
----
-
-## 📚 Included Algorithms
-
-* Bubble Sort
-* Quick Sort
-* Palindrome Checker
-
-More algorithms will be added progressively.
-
----
-
-## 🧠 What This Repo Is About
-
-* Understanding fundamental algorithms
-* Improving logical thinking and coding skills
-* Practicing clean Java implementations
-* Preparing for exams and technical interviews
-
----
-
-## 🛠️ Tech Stack
-
-* Java (Core)
-* Object-Oriented Programming (OOP)
-* Basic Algorithm Design
-
----
-
-## 📁 Project Structure
+## 📂 Repository Structure
 
 ```
 Algorithms-For-CE-and-CS/
+├── 🔀 Sorting
+│   ├── Buble_Sort.java
+│   └── Quick_Sort.java
 │
-├── BubbleSort.java
-├── QuickSort.java
-├── Palindrome.java
+├── 🔢 Number Theory
+│   ├── Happy_Number.java
+│   ├── Harshad_Number.java
+│   ├── Missing_Number.java
+│   ├── Perfect_Number.java
+│   └── Ugly_Number.java
+│
+├── 🔤 String / Array
+│   ├── Palindrome.java
+│   └── Valid_Palindrome.java
+│
 └── README.md
 ```
 
 ---
 
-## ⚙️ Algorithms Overview
+## ⚙️ Algorithms
 
-### 🔹 Bubble Sort
+### 🔀 Sorting
 
-A simple comparison-based sorting algorithm that repeatedly swaps adjacent elements until the array is sorted.
+| Algorithm | File | Time Complexity | Approach |
+|-----------|------|:-:|-----------|
+| **Bubble Sort** | `Buble_Sort.java` | O(n²) | Repeatedly swaps adjacent elements if they are in the wrong order |
+| **Quick Sort** | `Quick_Sort.java` | O(n log n) avg | Divide-and-conquer using a pivot to partition the array recursively |
 
-### 🔹 Quick Sort
+### 🔢 Number Theory
 
-A divide-and-conquer algorithm that selects a pivot element and recursively sorts partitions.
+| Algorithm | File | Description |
+|-----------|------|-------------|
+| **Happy Number** | `Happy_Number.java` | Determines if repeatedly summing the squares of digits eventually reaches `1` |
+| **Harshad Number** | `Harshad_Number.java` | Checks if a number is divisible by the sum of its own digits |
+| **Missing Number** | `Missing_Number.java` | Finds the missing integer in a sequence `[0, n]` |
+| **Perfect Number** | `Perfect_Number.java` | Checks if a number equals the sum of its proper divisors (e.g. `6 = 1+2+3`) |
+| **Ugly Number** | `Ugly_Number.java` | Determines if a number's only prime factors are `2`, `3`, and `5` |
 
-### 🔹 Palindrome Checker
+### 🔤 String / Array
 
-Checks whether a string reads the same forward and backward.
-
----
-
-## 🎯 Goals
-
-* Strengthen algorithmic thinking
-* Build a strong foundation in Java
-* Practice for coding interviews and exams
-* Keep implementations clean and understandable
-
----
-
-## 🚀 Future Plans
-
-* Merge Sort, Insertion Sort, Selection Sort
-* Binary Search & Linear Search
-* Recursion problems
-* Time complexity analysis for each algorithm
+| Algorithm | File | Description |
+|-----------|------|-------------|
+| **Palindrome** | `Palindrome.java` | Checks if a string reads the same forwards and backwards |
+| **Valid Palindrome** | `Valid_Palindrome.java` | Palindrome check that ignores non-alphanumeric characters and case |
 
 ---
 
-## 🤝 Contributions
+## 🚀 Getting Started
 
-Suggestions and improvements are welcome.
-Feel free to fork and contribute.
+### Prerequisites
+
+- **Java 21+** (uses [JEP 463](https://openjdk.org/jeps/463) implicitly declared classes & instance main methods)
+
+### Run any algorithm
+
+```bash
+# Compile and run a single file
+java Buble_Sort.java
+
+# Or use the classic approach
+javac Quick_Sort.java
+java Quick_Sort
+```
+
+---
+
+## 🎯 Purpose
+
+- 📖 **Learn** — Understand core algorithms through concise Java implementations
+- 🧠 **Practice** — Strengthen problem-solving and logical thinking
+- 🎓 **Prepare** — Get ready for university exams and technical interviews
+- ✍️ **Reference** — Quick lookup for common algorithm patterns
+
+---
+
+## 📋 Roadmap
+
+- [ ] Merge Sort, Insertion Sort, Selection Sort
+- [ ] Binary Search & Linear Search
+- [ ] Linked List operations
+- [ ] Stack & Queue implementations
+- [ ] Recursion & Backtracking problems
+- [ ] Time & Space complexity analysis for each algorithm
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+1. **Fork** the repository
+2. **Add** a new algorithm (one file per algorithm, keep it simple)
+3. **Submit** a pull request
 
 ---
 
 ## 📜 License
 
-This project is open for educational use.
-
-
+This project is open for educational use. Use it, learn from it, share it.
