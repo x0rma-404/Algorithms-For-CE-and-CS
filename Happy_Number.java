@@ -2,11 +2,10 @@ void main(){
     Scanner sc = new Scanner(System.in);
     IO.print("Daxil Et: ");
      int a = sc.nextInt();
-
-     while (String.valueOf(a).length()>1) {
+     while (a!=1 && a!=4) {
         int c=0;
         while (a!=0) {
-            c=c+a%10;
+            c=c+(int)(Math.pow(a%10,2));
             a=a/10;
         }
         a=c;
@@ -19,4 +18,5 @@ void main(){
         IO.println("Not Happy");
      }
 
+     sc.close();
 }
