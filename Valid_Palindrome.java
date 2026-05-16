@@ -3,7 +3,7 @@ void main(){
     String c = IO.readln("Daxil Et: ");
     c = c.toLowerCase();
     for (int i = 0; i < c.length(); i++) {
-        if (c.charAt(i) >= 'a' && c.charAt(i) <= 'z') {
+        if ((c.charAt(i) >= 'a' && c.charAt(i) <= 'z') || (c.charAt(i) >= '0' && c.charAt(i) <= '9'))  {
             a.append(c.charAt(i));
         }
     }
