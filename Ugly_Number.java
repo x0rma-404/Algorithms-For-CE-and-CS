@@ -27,7 +27,7 @@ void main(){
                 break;
             }
 
-
+            scanner.close();
         }
     }
     
