@@ -23,6 +23,10 @@
 
 ## 💡 About
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=x0rma-404&repo=Algorithms-For-CE-and-CS&theme=transparent&hide_border=true&show_icons=true&title_color=4361EE&icon_color=4361EE" alt="Repo Stats" />
+</p>
+
 > Each file is a **standalone, runnable program** — no boilerplate, no frameworks, just pure algorithmic logic you can study, run, and modify.
 
 This repository is designed to be a clean reference for students preparing for **university exams**, **technical interviews**, or simply looking to **strengthen their problem-solving skills**. Every algorithm is implemented with clarity in mind, using modern Java features like [JEP 463](https://openjdk.org/jeps/463) (implicitly declared classes & instance main methods).
@@ -482,5 +486,6 @@ This project is open for educational use. Use it, learn from it, share it. ❤�
 ---
 
 <p align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=x0rma-404.Algorithms-For-CE-and-CS&left_color=4361EE&right_color=ED8B00" alt="Visitor Badge" /><br>
   <sub>Made with ☕ and curiosity</sub>
 </p>
