@@ -24,7 +24,7 @@
 ## 💡 About
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=x0rma-404&repo=Algorithms-For-CE-and-CS&theme=transparent&hide_border=true&show_icons=true&title_color=4361EE&icon_color=4361EE" alt="Repo Stats" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=transparent" alt="Programming Quote" />
 </p>
 
 > Each file is a **standalone, runnable program** — no boilerplate, no frameworks, just pure algorithmic logic you can study, run, and modify.
