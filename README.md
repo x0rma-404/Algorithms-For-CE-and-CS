@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Java_21+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
   <img src="https://img.shields.io/badge/Language-Python_3-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Problems_Solved-16-4361EE?style=for-the-badge" alt="Problems"/>
+  <img src="https://img.shields.io/badge/Problems_Solved-17-4361EE?style=for-the-badge" alt="Problems"/>
   <img src="https://img.shields.io/badge/Categories-4-7209B7?style=for-the-badge" alt="Categories"/>
   <img src="https://img.shields.io/badge/License-Open_Source-06D6A0?style=for-the-badge" alt="License"/>
 </p>
@@ -36,13 +36,16 @@ This repository is designed to be a clean reference for students preparing for *
 Algorithms-For-CE-and-CS/
 │
 ├── Java/                        # Java implementations
-│   ├── Buble_Sort.java          # Classic O(n²) comparison sort
+│   ├── 🔀 Sorting
+│   │   ├── Assign_Cookies.java      # Greedily assign cookies to children
+│   │   ├── Buble_Sort.java          # Classic O(n²) comparison sort
 │   ├── Insertion_Sort.java      # Build sorted array one at a time O(n²)
 │   ├── Merge_Sort.java          # Divide-and-conquer O(n log n) sort
 │   ├── ...                      # (And all other Java algorithms)
 │
 ├── Python/                      # Python implementations
-│   ├── Bubble_Sort.py           # Python equivalents for all algorithms
+│   ├── Assign_Cookies.py        # Python equivalents for all algorithms
+│   ├── Bubble_Sort.py
 │   ├── Insertion_Sort.py
 │   ├── Merge_Sort.py
 │   └── ...
@@ -64,11 +67,12 @@ Sorting algorithms arrange elements in a specific order. These implementations d
 
 | # | Algorithm | File | Time | Space | Difficulty | Approach |
 |:-:|-----------|------|:----:|:-----:|:----------:|----------|
-| 1 | **Bubble Sort** | `Buble_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Repeatedly compares and swaps adjacent elements until the array is sorted. Uses a nested loop — outer loop for passes, inner loop for comparisons. |
-| 2 | **Insertion Sort** | `Insertion_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Builds the final sorted array one item at a time. Efficient for small or nearly sorted datasets. |
-| 3 | **Merge Sort** | `Merge_Sort.java` | `O(n log n)` | `O(n)` | 🟡 Medium | Divides the list into n sublists, each containing one element, then repeatedly merges sublists. |
-| 4 | **Quick Sort** | `Quick_Sort.java` | `O(n log n)` | `O(n)` | 🟡 Medium | Selects the middle element as pivot, partitions into three lists (`left`, `mid`, `right`), and recursively sorts. Uses the Lomuto-style three-way partition. |
-| 5 | **Selection Sort** | `Selection_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Divides the input list into a sorted sublist and an unsorted sublist, repeatedly selecting the minimum. |
+| 1 | **Assign Cookies** | `Assign_Cookies.java` | `O(n log n)` | `O(1)` | 🟢 Easy | Sorts both greed factors and cookie sizes, then greedily satisfies children. |
+| 2 | **Bubble Sort** | `Buble_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Repeatedly compares and swaps adjacent elements until the array is sorted. Uses a nested loop — outer loop for passes, inner loop for comparisons. |
+| 3 | **Insertion Sort** | `Insertion_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Builds the final sorted array one item at a time. Efficient for small or nearly sorted datasets. |
+| 4 | **Merge Sort** | `Merge_Sort.java` | `O(n log n)` | `O(n)` | 🟡 Medium | Divides the list into n sublists, each containing one element, then repeatedly merges sublists. |
+| 5 | **Quick Sort** | `Quick_Sort.java` | `O(n log n)` | `O(n)` | 🟡 Medium | Selects the middle element as pivot, partitions into three lists (`left`, `mid`, `right`), and recursively sorts. Uses the Lomuto-style three-way partition. |
+| 6 | **Selection Sort** | `Selection_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Divides the input list into a sorted sublist and an unsorted sublist, repeatedly selecting the minimum. |
 
 <details>
 <summary>📖 <strong>Example — Bubble Sort</strong></summary>
@@ -377,6 +381,7 @@ A quick-reference table of all algorithms with their time and space complexity:
 
 | Algorithm | Best | Average | Worst | Space |
 |-----------|:----:|:-------:|:-----:|:-----:|
+| Assign Cookies | `Ω(n log n)` | `Θ(n log n)` | `O(n log n)` | `O(1)` |
 | Bubble Sort | `Ω(n)` | `Θ(n²)` | `O(n²)` | `O(1)` |
 | Insertion Sort | `Ω(n)` | `Θ(n²)` | `O(n²)` | `O(1)` |
 | Merge Sort | `Ω(n log n)` | `Θ(n log n)` | `O(n log n)` | `O(n)` |
