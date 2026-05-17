@@ -37,10 +37,11 @@ Algorithms-For-CE-and-CS/
 │
 ├── Java/                        # Java implementations
 │   ├── 🔀 Sorting
-│   │   ├── Assign_Cookies.java      # Greedily assign cookies to children
 │   │   ├── Buble_Sort.java          # Classic O(n²) comparison sort
-│   ├── Insertion_Sort.java      # Build sorted array one at a time O(n²)
-│   ├── Merge_Sort.java          # Divide-and-conquer O(n log n) sort
+│   │   └── ...                      # Other sorting algorithms
+│   ├── 🔤 Strings & Arrays
+│   │   ├── Assign_Cookies.java      # Greedily assign cookies to children
+│   │   └── ...
 │   ├── ...                      # (And all other Java algorithms)
 │
 ├── Python/                      # Python implementations
@@ -67,12 +68,11 @@ Sorting algorithms arrange elements in a specific order. These implementations d
 
 | # | Algorithm | File | Time | Space | Difficulty | Approach |
 |:-:|-----------|------|:----:|:-----:|:----------:|----------|
-| 1 | **Assign Cookies** | `Assign_Cookies.java` | `O(n log n)` | `O(1)` | 🟢 Easy | Sorts both greed factors and cookie sizes, then greedily satisfies children. |
-| 2 | **Bubble Sort** | `Buble_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Repeatedly compares and swaps adjacent elements until the array is sorted. Uses a nested loop — outer loop for passes, inner loop for comparisons. |
-| 3 | **Insertion Sort** | `Insertion_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Builds the final sorted array one item at a time. Efficient for small or nearly sorted datasets. |
-| 4 | **Merge Sort** | `Merge_Sort.java` | `O(n log n)` | `O(n)` | 🟡 Medium | Divides the list into n sublists, each containing one element, then repeatedly merges sublists. |
-| 5 | **Quick Sort** | `Quick_Sort.java` | `O(n log n)` | `O(n)` | 🟡 Medium | Selects the middle element as pivot, partitions into three lists (`left`, `mid`, `right`), and recursively sorts. Uses the Lomuto-style three-way partition. |
-| 6 | **Selection Sort** | `Selection_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Divides the input list into a sorted sublist and an unsorted sublist, repeatedly selecting the minimum. |
+| 1 | **Bubble Sort** | `Buble_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Repeatedly compares and swaps adjacent elements until the array is sorted. Uses a nested loop — outer loop for passes, inner loop for comparisons. |
+| 2 | **Insertion Sort** | `Insertion_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Builds the final sorted array one item at a time. Efficient for small or nearly sorted datasets. |
+| 3 | **Merge Sort** | `Merge_Sort.java` | `O(n log n)` | `O(n)` | 🟡 Medium | Divides the list into n sublists, each containing one element, then repeatedly merges sublists. |
+| 4 | **Quick Sort** | `Quick_Sort.java` | `O(n log n)` | `O(n)` | 🟡 Medium | Selects the middle element as pivot, partitions into three lists (`left`, `mid`, `right`), and recursively sorts. Uses the Lomuto-style three-way partition. |
+| 5 | **Selection Sort** | `Selection_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Divides the input list into a sorted sublist and an unsorted sublist, repeatedly selecting the minimum. |
 
 <details>
 <summary>📖 <strong>Example — Bubble Sort</strong></summary>
@@ -161,12 +161,12 @@ Number theory problems test mathematical reasoning and digit manipulation. These
 
 | # | Algorithm | File | Time | Space | Difficulty | Description |
 |:-:|-----------|------|:----:|:-----:|:----------:|-------------|
-| 7 | **Happy Number** | `Happy_Number.java` | `O(log n)` | `O(1)` | 🟢 Easy | Repeatedly replaces a number with the sum of squares of its digits. If it reaches `1`, it's happy; if it reaches `4`, it enters an infinite cycle and is not happy. |
-| 8 | **Harshad Number** | `Harshad_Number.java` | `O(d)` | `O(1)` | 🟢 Easy | Also called a **Niven number**. Checks if an integer is divisible by the sum of its own digits. Example: `18 → 1+8 = 9 → 18 ÷ 9 = 2 ✓` |
-| 9 | **Missing Number** | `Missing_Number.java` | `O(n log n)` | `O(n)` | 🟢 Easy | Given an array of `n` distinct numbers from `[0, n]`, finds the one missing number. Sorts the array and scans for the gap. |
-| 10 | **Perfect Number** | `Perfect_Number.java` | `O(n)` | `O(1)` | 🟢 Easy | A number is **perfect** if it equals the sum of its proper divisors (excluding itself). Example: `6 = 1 + 2 + 3 ✓`, `28 = 1 + 2 + 4 + 7 + 14 ✓` |
-| 11 | **Power of Four** | `Power_of_Four.java` | `O(log₄ n)` | `O(1)` | 🟢 Easy | Checks if a number is a power of `4` by repeatedly dividing by `4`. If the result is `1`, it's a power of four. Example: `64 = 4³ ✓`, `12 ✗` |
-| 12 | **Ugly Number** | `Ugly_Number.java` | `O(log n)` | `O(1)` | 🟢 Easy | Checks if a number's **only** prime factors are `2`, `3`, or `5`. Repeatedly divides by these primes — if the result is `1`, it's ugly. Example: `30 = 2 × 3 × 5 ✓` |
+| 6 | **Happy Number** | `Happy_Number.java` | `O(log n)` | `O(1)` | 🟢 Easy | Repeatedly replaces a number with the sum of squares of its digits. If it reaches `1`, it's happy; if it reaches `4`, it enters an infinite cycle and is not happy. |
+| 7 | **Harshad Number** | `Harshad_Number.java` | `O(d)` | `O(1)` | 🟢 Easy | Also called a **Niven number**. Checks if an integer is divisible by the sum of its own digits. Example: `18 → 1+8 = 9 → 18 ÷ 9 = 2 ✓` |
+| 8 | **Missing Number** | `Missing_Number.java` | `O(n log n)` | `O(n)` | 🟢 Easy | Given an array of `n` distinct numbers from `[0, n]`, finds the one missing number. Sorts the array and scans for the gap. |
+| 9 | **Perfect Number** | `Perfect_Number.java` | `O(n)` | `O(1)` | 🟢 Easy | A number is **perfect** if it equals the sum of its proper divisors (excluding itself). Example: `6 = 1 + 2 + 3 ✓`, `28 = 1 + 2 + 4 + 7 + 14 ✓` |
+| 10 | **Power of Four** | `Power_of_Four.java` | `O(log₄ n)` | `O(1)` | 🟢 Easy | Checks if a number is a power of `4` by repeatedly dividing by `4`. If the result is `1`, it's a power of four. Example: `64 = 4³ ✓`, `12 ✗` |
+| 11 | **Ugly Number** | `Ugly_Number.java` | `O(log n)` | `O(1)` | 🟢 Easy | Checks if a number's **only** prime factors are `2`, `3`, or `5`. Repeatedly divides by these primes — if the result is `1`, it's ugly. Example: `30 = 2 × 3 × 5 ✓` |
 
 <details>
 <summary>📖 <strong>Example — Happy Number</strong></summary>
@@ -275,6 +275,7 @@ String and array problems are among the most common in coding interviews. These 
 
 | # | Algorithm | File | Time | Space | Difficulty | Description |
 |:-:|-----------|------|:----:|:-----:|:----------:|-------------|
+| 12 | **Assign Cookies** | `Assign_Cookies.java` | `O(n log n)` | `O(1)` | 🟢 Easy | Sorts both greed factors and cookie sizes, then greedily satisfies children. |
 | 13 | **Isomorphic Strings** | `Isomorphic_Strings.java` | `O(n)` | `O(k)` | 🟢 Easy | Two strings are **isomorphic** if characters in one can be mapped to characters in the other with a consistent 1-to-1 mapping. Uses a `HashMap` for character mapping. Example: `egg ↔ add ✓`, `foo ↔ bar ✗` |
 | 14 | **Palindrome** | `Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Checks if a string reads the same forwards and backwards using `StringBuilder.reverse()`. Example: `racecar ✓`, `hello ✗` |
 | 15 | **Reverse String** | `Reverse_String.java` | `O(n)` | `O(1)` | 🟢 Easy | Reverses a `char[]` **in-place** using the two-pointer technique — swapping characters from both ends toward the center. Example: `hello → olleh` |
