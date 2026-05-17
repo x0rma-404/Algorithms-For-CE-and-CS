@@ -1,11 +1,12 @@
 <div align="center">
   <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/128/external-algorithm-computer-programming-flaticons-flat-flat-icons.png" alt="logo" width="100"/>
   <h1>🧮 Algorithms for CE & CS</h1>
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=4361EE&center=true&vCenter=true&width=600&lines=A+curated+collection+of+fundamental+algorithms;Built+for+CE+%26+CS+students;Implemented+in+Java+21%2B" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=4361EE&center=true&vCenter=true&width=600&lines=A+curated+collection+of+fundamental+algorithms;Built+for+CE+%26+CS+students;Implemented+in+Java+and+Python" alt="Typing SVG" /></a>
 </div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Java_21+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
+  <img src="https://img.shields.io/badge/Language-Python_3-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/Problems_Solved-16-4361EE?style=for-the-badge" alt="Problems"/>
   <img src="https://img.shields.io/badge/Categories-4-7209B7?style=for-the-badge" alt="Categories"/>
   <img src="https://img.shields.io/badge/License-Open_Source-06D6A0?style=for-the-badge" alt="License"/>
@@ -25,7 +26,7 @@
 
 > Each file is a **standalone, runnable program** — no boilerplate, no frameworks, just pure algorithmic logic you can study, run, and modify.
 
-This repository is designed to be a clean reference for students preparing for **university exams**, **technical interviews**, or simply looking to **strengthen their problem-solving skills**. Every algorithm is implemented with clarity in mind, using modern Java features like [JEP 463](https://openjdk.org/jeps/463) (implicitly declared classes & instance main methods).
+This repository is designed to be a clean reference for students preparing for **university exams**, **technical interviews**, or simply looking to **strengthen their problem-solving skills**. Every algorithm is implemented with clarity in mind, using modern Java features like [JEP 463](https://openjdk.org/jeps/463) and clean Python 3 syntax.
 
 ---
 
@@ -34,29 +35,17 @@ This repository is designed to be a clean reference for students preparing for *
 ```
 Algorithms-For-CE-and-CS/
 │
-├── 🔀 Sorting
+├── Java/                        # Java implementations
 │   ├── Buble_Sort.java          # Classic O(n²) comparison sort
 │   ├── Insertion_Sort.java      # Build sorted array one at a time O(n²)
 │   ├── Merge_Sort.java          # Divide-and-conquer O(n log n) sort
-│   ├── Quick_Sort.java          # Divide-and-conquer O(n log n) sort
-│   └── Selection_Sort.java      # In-place comparison sort O(n²)
+│   ├── ...                      # (And all other Java algorithms)
 │
-├── 🔢 Number Theory
-│   ├── Happy_Number.java        # Sum-of-squares cycle detection
-│   ├── Harshad_Number.java      # Divisibility by digit sum
-│   ├── Missing_Number.java      # Find gap in sequence [0, n]
-│   ├── Perfect_Number.java      # Sum of proper divisors check
-│   ├── Power_of_Four.java       # Repeated division by 4
-│   └── Ugly_Number.java         # Prime factor restriction (2, 3, 5)
-│
-├── 🔤 Strings & Arrays
-│   ├── Isomorphic_Strings.java  # Character-mapping equivalence
-│   ├── Palindrome.java          # Forward-backward equality
-│   ├── Reverse_String.java      # Two-pointer in-place reversal
-│   └── Valid_Palindrome.java    # Alphanumeric-only palindrome
-│
-├── 🔗 Linked List
-│   └── Remove_Duplicates_from_Sorted_List.java
+├── Python/                      # Python implementations
+│   ├── Bubble_Sort.py           # Python equivalents for all algorithms
+│   ├── Insertion_Sort.py
+│   ├── Merge_Sort.py
+│   └── ...
 │
 └── README.md
 ```
@@ -413,21 +402,25 @@ A quick-reference table of all algorithms with their time and space complexity:
 
 ### Prerequisites
 
-- **Java 21+** — required for [JEP 463](https://openjdk.org/jeps/463) (implicitly declared classes & instance main methods)
-- Verify your version:
-  ```bash
-  java --version
-  ```
+- **Java 21+** — required for [JEP 463](https://openjdk.org/jeps/463)
+- **Python 3+** — required for Python executions
 
 ### Run Any Algorithm
 
+**Java:**
 ```bash
 # 🏃 Direct execution (Java 21+)
-java Happy_Number.java
+java Java/Happy_Number.java
 
 # 🔨 Or compile first, then run
-javac Quick_Sort.java
+javac Java/Quick_Sort.java
 java Quick_Sort
+```
+
+**Python:**
+```bash
+# 🐍 Direct execution
+python Python/Happy_Number.py
 ```
 
 > **Tip:** Each file is completely self-contained — no external dependencies, no project setup required.
@@ -466,8 +459,8 @@ java Quick_Sort
 Contributions are welcome! Here's how you can help:
 
 1. 🍴 **Fork** the repository
-2. 📝 **Create** a new algorithm file (one algorithm per file, keep it clean)
-3. ✅ **Ensure** your code compiles with `java FileName.java`
+2. 📝 **Create** a new algorithm file in the respective `Java/` or `Python/` directory
+3. ✅ **Ensure** your code compiles and runs successfully
 4. 📬 **Submit** a pull request with a brief description
 
 ### Guidelines
