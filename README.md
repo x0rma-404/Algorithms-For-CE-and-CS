@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Java_21+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
   <img src="https://img.shields.io/badge/Language-Python_3-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Problems_Solved-17-4361EE?style=for-the-badge" alt="Problems"/>
+  <img src="https://img.shields.io/badge/Problems_Solved-19-4361EE?style=for-the-badge" alt="Problems"/>
   <img src="https://img.shields.io/badge/Categories-4-7209B7?style=for-the-badge" alt="Categories"/>
   <img src="https://img.shields.io/badge/License-Open_Source-06D6A0?style=for-the-badge" alt="License"/>
 </p>
@@ -41,6 +41,7 @@ Algorithms-For-CE-and-CS/
 │   │   └── ...                      # Other sorting algorithms
 │   ├── 🔤 Strings & Arrays
 │   │   ├── Assign_Cookies.java      # Greedily assign cookies to children
+│   │   ├── Fairy_Candy_Swap.java    # Find one candy exchange to equalize sums
 │   │   └── ...
 │   ├── ...                      # (And all other Java algorithms)
 │
@@ -165,8 +166,9 @@ Number theory problems test mathematical reasoning and digit manipulation. These
 | 7 | **Harshad Number** | `Harshad_Number.java` | `O(d)` | `O(1)` | 🟢 Easy | Also called a **Niven number**. Checks if an integer is divisible by the sum of its own digits. Example: `18 → 1+8 = 9 → 18 ÷ 9 = 2 ✓` |
 | 8 | **Missing Number** | `Missing_Number.java` | `O(n log n)` | `O(n)` | 🟢 Easy | Given an array of `n` distinct numbers from `[0, n]`, finds the one missing number. Sorts the array and scans for the gap. |
 | 9 | **Perfect Number** | `Perfect_Number.java` | `O(n)` | `O(1)` | 🟢 Easy | A number is **perfect** if it equals the sum of its proper divisors (excluding itself). Example: `6 = 1 + 2 + 3 ✓`, `28 = 1 + 2 + 4 + 7 + 14 ✓` |
-| 10 | **Power of Four** | `Power_of_Four.java` | `O(log₄ n)` | `O(1)` | 🟢 Easy | Checks if a number is a power of `4` by repeatedly dividing by `4`. If the result is `1`, it's a power of four. Example: `64 = 4³ ✓`, `12 ✗` |
-| 11 | **Ugly Number** | `Ugly_Number.java` | `O(log n)` | `O(1)` | 🟢 Easy | Checks if a number's **only** prime factors are `2`, `3`, or `5`. Repeatedly divides by these primes — if the result is `1`, it's ugly. Example: `30 = 2 × 3 × 5 ✓` |
+| 10 | **Permutation** | `Permutation.java` | `O(n)` | `O(1)` | 🟢 Easy | Calculates the number of permutations `P(n, p) = n! / (n-p)!`. |
+| 11 | **Power of Four** | `Power_of_Four.java` | `O(log₄ n)` | `O(1)` | 🟢 Easy | Checks if a number is a power of `4` by repeatedly dividing by `4`. If the result is `1`, it's a power of four. Example: `64 = 4³ ✓`, `12 ✗` |
+| 12 | **Ugly Number** | `Ugly_Number.java` | `O(log n)` | `O(1)` | 🟢 Easy | Checks if a number's **only** prime factors are `2`, `3`, or `5`. Repeatedly divides by these primes — if the result is `1`, it's ugly. Example: `30 = 2 × 3 × 5 ✓` |
 
 <details>
 <summary>📖 <strong>Example — Happy Number</strong></summary>
@@ -275,11 +277,12 @@ String and array problems are among the most common in coding interviews. These 
 
 | # | Algorithm | File | Time | Space | Difficulty | Description |
 |:-:|-----------|------|:----:|:-----:|:----------:|-------------|
-| 12 | **Assign Cookies** | `Assign_Cookies.java` | `O(n log n)` | `O(1)` | 🟢 Easy | Sorts both greed factors and cookie sizes, then greedily satisfies children. |
-| 13 | **Isomorphic Strings** | `Isomorphic_Strings.java` | `O(n)` | `O(k)` | 🟢 Easy | Two strings are **isomorphic** if characters in one can be mapped to characters in the other with a consistent 1-to-1 mapping. Uses a `HashMap` for character mapping. Example: `egg ↔ add ✓`, `foo ↔ bar ✗` |
-| 14 | **Palindrome** | `Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Checks if a string reads the same forwards and backwards using `StringBuilder.reverse()`. Example: `racecar ✓`, `hello ✗` |
-| 15 | **Reverse String** | `Reverse_String.java` | `O(n)` | `O(1)` | 🟢 Easy | Reverses a `char[]` **in-place** using the two-pointer technique — swapping characters from both ends toward the center. Example: `hello → olleh` |
-| 16 | **Valid Palindrome** | `Valid_Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Enhanced palindrome check that **strips non-alphanumeric characters** and **ignores case** before comparing. Example: `"A man, a plan, a canal: Panama" ✓` |
+| 13 | **Assign Cookies** | `Assign_Cookies.java` | `O(n log n)` | `O(1)` | 🟢 Easy | Sorts both greed factors and cookie sizes, then greedily satisfies children. |
+| 14 | **Fairy Candy Swap** | `Fairy_Candy_Swap.java` | `O(n * m)` | `O(n + m)` | 🟢 Easy | Finds one candy exchange that makes two sums equal. Uses nested loops to check all pairs. |
+| 15 | **Isomorphic Strings** | `Isomorphic_Strings.java` | `O(n)` | `O(k)` | 🟢 Easy | Two strings are **isomorphic** if characters in one can be mapped to characters in the other with a consistent 1-to-1 mapping. Uses a `HashMap` for character mapping. Example: `egg ↔ add ✓`, `foo ↔ bar ✗` |
+| 16 | **Palindrome** | `Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Checks if a string reads the same forwards and backwards using `StringBuilder.reverse()`. Example: `racecar ✓`, `hello ✗` |
+| 17 | **Reverse String** | `Reverse_String.java` | `O(n)` | `O(1)` | 🟢 Easy | Reverses a `char[]` **in-place** using the two-pointer technique — swapping characters from both ends toward the center. Example: `hello → olleh` |
+| 18 | **Valid Palindrome** | `Valid_Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Enhanced palindrome check that **strips non-alphanumeric characters** and **ignores case** before comparing. Example: `"A man, a plan, a canal: Panama" ✓` |
 
 <details>
 <summary>📖 <strong>Example — Isomorphic Strings</strong></summary>
@@ -358,7 +361,7 @@ Linked list problems test pointer manipulation and in-place modification skills.
 
 | # | Algorithm | File | Time | Space | Difficulty | Description |
 |:-:|-----------|------|:----:|:-----:|:----------:|-------------|
-| 17 | **Remove Duplicates from Sorted List** | `Remove_Duplicates_from_Sorted_List.java` | `O(n)` | `O(k)` | 🟢 Easy | Iterates through a sorted array and collects only the **duplicate** values (elements appearing more than once), removing redundant copies. |
+| 19 | **Remove Duplicates from Sorted List** | `Remove_Duplicates_from_Sorted_List.java` | `O(n)` | `O(k)` | 🟢 Easy | Iterates through a sorted array and collects only the **duplicate** values (elements appearing more than once), removing redundant copies. |
 
 <details>
 <summary>📖 <strong>Example — Remove Duplicates</strong></summary>
