@@ -74,15 +74,32 @@ Sorting algorithms arrange elements in a specific order. These implementations d
 | 1 | **Bubble Sort** | `Buble_Sort.java` | `O(n²)` | `O(1)` | 🟢 Easy | Repeatedly compares and swaps adjacent elements until the array is sorted. Uses a nested loop — outer loop for passes, inner loop for comparisons. |
 | 2 | **Quick Sort** | `Quick_Sort.java` | `O(n log n)` | `O(n)` | 🟡 Medium | Selects the middle element as pivot, partitions into three lists (`left`, `mid`, `right`), and recursively sorts. Uses the Lomuto-style three-way partition. |
 
-<details>
-<summary>📖 <strong>Example — Quick Sort</strong></summary>
+<br/>
 
-```
-Input:  [72, 15, 93, 41, 8, 56, 27, 64, 39, 82]
-Output: [8, 15, 27, 39, 41, 56, 64, 72, 82, 93]
-```
+> **📖 Example — Bubble Sort**
+> ```
+> Input:  [34, 12, 78, 5, 61, 23, 9, 45, 87, 3]
+>
+> Pass 1: [12, 34, 5, 61, 23, 9, 45, 78, 3, 87]  ← 87 bubbles to end
+> Pass 2: [12, 5, 34, 23, 9, 45, 61, 3, 78, 87]  ← 78 in place
+> Pass 3: [5, 12, 23, 9, 34, 45, 3, 61, 78, 87]  ← 61 in place
+>   ...continues until fully sorted...
+>
+> Output: [3, 5, 9, 12, 23, 34, 45, 61, 78, 87]
+> ```
 
-</details>
+> **📖 Example — Quick Sort**
+> ```
+> Input:  [72, 15, 93, 41, 8, 56, 27, 64, 39, 82]
+>
+> Step 1: pivot = 56
+>         left  = [15, 41, 8, 27, 39]
+>         mid   = [56]
+>         right = [72, 93, 64, 82]
+> Step 2: Recursively sort left and right...
+>
+> Output: [8, 15, 27, 39, 41, 56, 64, 72, 82, 93]
+> ```
 
 ---
 
@@ -98,37 +115,69 @@ Number theory problems test mathematical reasoning and digit manipulation. These
 | 6 | **Perfect Number** | `Perfect_Number.java` | `O(n)` | `O(1)` | 🟢 Easy | A number is **perfect** if it equals the sum of its proper divisors (excluding itself). Example: `6 = 1 + 2 + 3 ✓`, `28 = 1 + 2 + 4 + 7 + 14 ✓` |
 | 7 | **Ugly Number** | `Ugly_Number.java` | `O(log n)` | `O(1)` | 🟢 Easy | Checks if a number's **only** prime factors are `2`, `3`, or `5`. Repeatedly divides by these primes — if the result is `1`, it's ugly. Example: `30 = 2 × 3 × 5 ✓` |
 
-<details>
-<summary>📖 <strong>Example — Happy Number</strong></summary>
+<br/>
 
-```
-Input:  19
-19 → 1² + 9² = 82
-82 → 8² + 2² = 68
-68 → 6² + 8² = 100
-100 → 1² + 0² + 0² = 1 ✓
-Output: Happy
-```
+> **📖 Example — Happy Number**
+> ```
+> Input:  19
+> 19 → 1² + 9² = 82
+> 82 → 8² + 2² = 68
+> 68 → 6² + 8² = 100
+> 100 → 1² + 0² + 0² = 1 ✓
+> Output: Happy
+>
+> Input:  2
+> 2 → 2² = 4  ← reached 4, enters infinite cycle
+> Output: Not Happy
+> ```
 
-</details>
+> **📖 Example — Harshad Number**
+> ```
+> Input:  18
+> Digit sum: 1 + 8 = 9
+> 18 ÷ 9 = 2 (no remainder) ✓
+> Output: Harshad
+>
+> Input:  14
+> Digit sum: 1 + 4 = 5
+> 14 ÷ 5 = 2.8 (has remainder) ✗
+> Output: Not Harshad
+> ```
 
-<details>
-<summary>📖 <strong>Example — Ugly Number</strong></summary>
+> **📖 Example — Missing Number**
+> ```
+> Input:  [9, 6, 4, 2, 3, 5, 7, 0, 1]
+> Sorted: [0, 1, 2, 3, 4, 5, 6, 7, 9]
+> Scan:    0=0 ✓, 1=1 ✓, 2=2 ✓, ... 7=7 ✓, 8≠9 ✗
+> Output: 8  ← the missing number
+> ```
 
-```
-Input:  30
-30 ÷ 2 = 15
-15 ÷ 3 = 5
-5 ÷ 5 = 1 ✓
-Output: Ugly
+> **📖 Example — Perfect Number**
+> ```
+> Input:  28
+> Divisors of 28: 1, 2, 4, 7, 14
+> Sum: 1 + 2 + 4 + 7 + 14 = 28 ✓
+> Output: Perfect
+>
+> Input:  12
+> Divisors of 12: 1, 2, 3, 4, 6
+> Sum: 1 + 2 + 3 + 4 + 6 = 16 ≠ 12 ✗
+> Output: Not Perfect
+> ```
 
-Input:  14
-14 ÷ 2 = 7
-7 is not divisible by 2, 3, or 5 ✗
-Output: Not Ugly
-```
-
-</details>
+> **📖 Example — Ugly Number**
+> ```
+> Input:  30
+> 30 ÷ 2 = 15
+> 15 ÷ 3 = 5
+> 5 ÷ 5 = 1 ✓
+> Output: Ugly
+>
+> Input:  14
+> 14 ÷ 2 = 7
+> 7 is not divisible by 2, 3, or 5 ✗
+> Output: Not Ugly
+> ```
 
 ---
 
@@ -142,23 +191,49 @@ String and array problems are among the most common in coding interviews. These 
 | 9 | **Palindrome** | `Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Checks if a string reads the same forwards and backwards using `StringBuilder.reverse()`. Example: `racecar ✓`, `hello ✗` |
 | 10 | **Valid Palindrome** | `Valid_Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Enhanced palindrome check that **strips non-alphanumeric characters** and **ignores case** before comparing. Example: `"A man, a plan, a canal: Panama" ✓` |
 
-<details>
-<summary>📖 <strong>Example — Isomorphic Strings</strong></summary>
+<br/>
 
-```
-Input:  "egg"
-        "add"
-Mapping: {e→a, g→d}
-Reconstructed: "add" == "add" ✓
-Output: ISOMORPHIC
+> **📖 Example — Isomorphic Strings**
+> ```
+> Input:  "egg"
+>         "add"
+> Mapping: {e→a, g→d}
+> Reconstructed: "add" == "add" ✓
+> Output: ISOMORPHIC
+>
+> Input:  "foo"
+>         "bar"
+> Mapping: {f→b, o→a} — but 'o' maps to both 'a' and 'r'!
+> Output: NOT ISOMORPHIC
+> ```
 
-Input:  "foo"
-        "bar"
-Mapping: {f→b, o→a} — but 'o' maps to both 'a' and 'r'!
-Output: NOT ISOMORPHIC
-```
+> **📖 Example — Palindrome**
+> ```
+> Input:  "racecar"
+> Reversed: "racecar"
+> "racecar" == "racecar" ✓
+> Output: PALINDROME
+>
+> Input:  "hello"
+> Reversed: "olleh"
+> "hello" ≠ "olleh" ✗
+> Output: NOT PALINDROME
+> ```
 
-</details>
+> **📖 Example — Valid Palindrome**
+> ```
+> Input:  "A man, a plan, a canal: Panama"
+> Cleaned: "amanaplanacanalpanama"
+> Reversed: "amanaplanacanalpanama"
+> Match ✓
+> Output: Valid Palindrome
+>
+> Input:  "race a car"
+> Cleaned: "raceacar"
+> Reversed: "racaecar"
+> No match ✗
+> Output: Not Valid Palindrome
+> ```
 
 ---
 
@@ -170,15 +245,17 @@ Linked list problems test pointer manipulation and in-place modification skills.
 |:-:|-----------|------|:----:|:-----:|:----------:|-------------|
 | 11 | **Remove Duplicates from Sorted List** | `Remove_Duplicates_from_Sorted_List.java` | `O(n)` | `O(k)` | 🟢 Easy | Iterates through a sorted array and collects only the **duplicate** values (elements appearing more than once), removing redundant copies. |
 
-<details>
-<summary>📖 <strong>Example — Remove Duplicates</strong></summary>
+<br/>
 
-```
-Input:  [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 6, 6, 6]
-Output: [1, 2, 3, 4, 5, 6]
-```
-
-</details>
+> **📖 Example — Remove Duplicates**
+> ```
+> Input:  [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 6, 6, 6]
+>
+> Scan: 1==1 → add 1 | 2==2 → add 2 | 3==3 → add 3
+>       4==4 → add 4 | 5==5 → add 5 | 6==6 → add 6
+>
+> Output: [1, 2, 3, 4, 5, 6]
+> ```
 
 ---
 
