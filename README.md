@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Abacus.png" alt="Abacus" width="120" />
+  <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/128/external-algorithm-computer-programming-flaticons-flat-flat-icons.png" alt="logo" width="100"/>
   <h1>🧮 Algorithms for CE & CS</h1>
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=4361EE&center=true&vCenter=true&width=600&lines=A+curated+collection+of+fundamental+algorithms;Built+for+CE+%26+CS+students;Implemented+in+Java+21%2B" alt="Typing SVG" /></a>
 </div>
