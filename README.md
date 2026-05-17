@@ -23,10 +23,6 @@
 
 ## 💡 About
 
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=transparent" alt="Programming Quote" />
-</p>
-
 > Each file is a **standalone, runnable program** — no boilerplate, no frameworks, just pure algorithmic logic you can study, run, and modify.
 
 This repository is designed to be a clean reference for students preparing for **university exams**, **technical interviews**, or simply looking to **strengthen their problem-solving skills**. Every algorithm is implemented with clarity in mind, using modern Java features like [JEP 463](https://openjdk.org/jeps/463) (implicitly declared classes & instance main methods).
@@ -70,6 +66,10 @@ Algorithms-For-CE-and-CS/
 ## ⚙️ Algorithms
 
 ### 🔀 Sorting
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" alt="Merge Sort Animation" width="280" style="border-radius: 8px;"/>
+</p>
 
 Sorting algorithms arrange elements in a specific order. These implementations demonstrate two fundamental approaches — the simplicity of comparison-based swapping and the efficiency of divide-and-conquer.
 
