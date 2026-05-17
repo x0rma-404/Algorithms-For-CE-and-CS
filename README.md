@@ -1,13 +1,8 @@
-<p align="center">
-  <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/128/external-algorithm-computer-programming-flaticons-flat-flat-icons.png" alt="logo" width="100"/>
-</p>
-
-<h1 align="center">🧮 Algorithms for CE & CS</h1>
-
-<p align="center">
-  <strong>A curated collection of fundamental algorithms implemented in Java</strong><br/>
-  <em>Built for Computer Engineering & Computer Science students</em>
-</p>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Abacus.png" alt="Abacus" width="120" />
+  <h1>🧮 Algorithms for CE & CS</h1>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=4361EE&center=true&vCenter=true&width=600&lines=A+curated+collection+of+fundamental+algorithms;Built+for+CE+%26+CS+students;Implemented+in+Java+21%2B" alt="Typing SVG" /></a>
+</div>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Java_21+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
