@@ -7,8 +7,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Java_21+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
   <img src="https://img.shields.io/badge/Language-Python_3-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Problems_Solved-20-4361EE?style=for-the-badge" alt="Problems"/>
-  <img src="https://img.shields.io/badge/Categories-4-7209B7?style=for-the-badge" alt="Categories"/>
+  <img src="https://img.shields.io/badge/Problems_Solved-21-4361EE?style=for-the-badge" alt="Problems"/>
+  <img src="https://img.shields.io/badge/Categories-5-7209B7?style=for-the-badge" alt="Categories"/>
   <img src="https://img.shields.io/badge/License-Open_Source-06D6A0?style=for-the-badge" alt="License"/>
 </p>
 
@@ -17,6 +17,7 @@
   <a href="#-number-theory">Number Theory</a> •
   <a href="#-strings--arrays">Strings & Arrays</a> •
   <a href="#-linked-list">Linked List</a> •
+  <a href="#-searching">Searching</a> •
   <a href="#-getting-started">Get Started</a>
 </p>
 
@@ -47,6 +48,7 @@ Algorithms-For-CE-and-CS/
 │
 ├── Python/                      # Python implementations
 │   ├── Assign_Cookies.py        # Python equivalents for all algorithms
+│   ├── Binary_Search.py
 │   ├── Bubble_Sort.py
 │   ├── Insertion_Sort.py
 │   ├── Merge_Sort.py
@@ -380,6 +382,30 @@ Output: [1, 2, 3, 4, 5, 6]
 
 ---
 
+### 🔍 Searching
+
+Searching algorithms are used to retrieve information stored within some data structure. These implementations explore fundamental techniques for finding elements efficiently.
+
+| # | Algorithm | File | Time | Space | Difficulty | Description |
+|:-:|-----------|------|:----:|:-----:|:----------:|-------------|
+| 21 | **Binary Search** | `Binary_Search.java` | `O(log n)` | `O(1)` | 🟢 Easy | Efficiently finds a target value within a sorted array by repeatedly dividing the search interval in half. |
+
+<details>
+<summary>📖 <strong>Example — Binary Search</strong></summary>
+
+```
+Input:  nums = [-1, 0, 3, 5, 9, 12], target = 9
+
+Step 1: left=0, right=5, mid=2 (val=3)  → 3 < 9, search right half
+Step 2: left=3, right=5, mid=4 (val=9)  → 9 == 9 ✓
+
+Output: 4  ← index of the target
+```
+
+</details>
+
+---
+
 ## 📊 Complexity Overview
 
 A quick-reference table of all algorithms with their time and space complexity:
@@ -405,6 +431,7 @@ A quick-reference table of all algorithms with their time and space complexity:
 | Reverse String | — | `O(n)` | — | `O(1)` |
 | Valid Palindrome | — | `O(n)` | — | `O(n)` |
 | Remove Duplicates | — | `O(n)` | — | `O(k)` |
+| Binary Search | `Ω(1)` | `Θ(log n)` | `O(log n)` | `O(1)` |
 
 > `n` = input size &nbsp;·&nbsp; `d` = number of digits &nbsp;·&nbsp; `k` = number of unique characters/elements
 
@@ -456,7 +483,7 @@ python Python/Happy_Number.py
 > Upcoming additions planned for this repository:
 
 - [x] ~~**Sorting** — Merge Sort, Insertion Sort, Selection Sort~~
-- [ ] **Searching** — Binary Search & Linear Search
+- [ ] **Searching** — Binary Search (Done) & Linear Search
 - [x] ~~**Linked List** — Linked List operations~~
 - [ ] **Data Structures** — Stack & Queue implementations
 - [ ] **Recursion** — Recursion & Backtracking problems
