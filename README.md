@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Java_21+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
   <img src="https://img.shields.io/badge/Language-Python_3-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Problems_Solved-19-4361EE?style=for-the-badge" alt="Problems"/>
+  <img src="https://img.shields.io/badge/Problems_Solved-20-4361EE?style=for-the-badge" alt="Problems"/>
   <img src="https://img.shields.io/badge/Categories-4-7209B7?style=for-the-badge" alt="Categories"/>
   <img src="https://img.shields.io/badge/License-Open_Source-06D6A0?style=for-the-badge" alt="License"/>
 </p>
@@ -278,11 +278,12 @@ String and array problems are among the most common in coding interviews. These 
 | # | Algorithm | File | Time | Space | Difficulty | Description |
 |:-:|-----------|------|:----:|:-----:|:----------:|-------------|
 | 13 | **Assign Cookies** | `Assign_Cookies.java` | `O(n log n)` | `O(1)` | 🟢 Easy | Sorts both greed factors and cookie sizes, then greedily satisfies children. |
-| 14 | **Fairy Candy Swap** | `Fairy_Candy_Swap.java` | `O(n * m)` | `O(n + m)` | 🟢 Easy | Finds one candy exchange that makes two sums equal. Uses nested loops to check all pairs. |
-| 15 | **Isomorphic Strings** | `Isomorphic_Strings.java` | `O(n)` | `O(k)` | 🟢 Easy | Two strings are **isomorphic** if characters in one can be mapped to characters in the other with a consistent 1-to-1 mapping. Uses a `HashMap` for character mapping. Example: `egg ↔ add ✓`, `foo ↔ bar ✗` |
-| 16 | **Palindrome** | `Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Checks if a string reads the same forwards and backwards using `StringBuilder.reverse()`. Example: `racecar ✓`, `hello ✗` |
-| 17 | **Reverse String** | `Reverse_String.java` | `O(n)` | `O(1)` | 🟢 Easy | Reverses a `char[]` **in-place** using the two-pointer technique — swapping characters from both ends toward the center. Example: `hello → olleh` |
-| 18 | **Valid Palindrome** | `Valid_Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Enhanced palindrome check that **strips non-alphanumeric characters** and **ignores case** before comparing. Example: `"A man, a plan, a canal: Panama" ✓` |
+| 14 | **Character Frequency Sort** | `No1.java` | `O(n)` | `O(k)` | 🟢 Easy | Counts character frequencies, sorts them by frequency and alphabetically, then reconstructs the string. |
+| 15 | **Fairy Candy Swap** | `Fairy_Candy_Swap.java` | `O(n * m)` | `O(n + m)` | 🟢 Easy | Finds one candy exchange that makes two sums equal. Uses nested loops to check all pairs. |
+| 16 | **Isomorphic Strings** | `Isomorphic_Strings.java` | `O(n)` | `O(k)` | 🟢 Easy | Two strings are **isomorphic** if characters in one can be mapped to characters in the other with a consistent 1-to-1 mapping. Uses a `HashMap` for character mapping. Example: `egg ↔ add ✓`, `foo ↔ bar ✗` |
+| 17 | **Palindrome** | `Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Checks if a string reads the same forwards and backwards using `StringBuilder.reverse()`. Example: `racecar ✓`, `hello ✗` |
+| 18 | **Reverse String** | `Reverse_String.java` | `O(n)` | `O(1)` | 🟢 Easy | Reverses a `char[]` **in-place** using the two-pointer technique — swapping characters from both ends toward the center. Example: `hello → olleh` |
+| 19 | **Valid Palindrome** | `Valid_Palindrome.java` | `O(n)` | `O(n)` | 🟢 Easy | Enhanced palindrome check that **strips non-alphanumeric characters** and **ignores case** before comparing. Example: `"A man, a plan, a canal: Panama" ✓` |
 
 <details>
 <summary>📖 <strong>Example — Isomorphic Strings</strong></summary>
@@ -361,7 +362,7 @@ Linked list problems test pointer manipulation and in-place modification skills.
 
 | # | Algorithm | File | Time | Space | Difficulty | Description |
 |:-:|-----------|------|:----:|:-----:|:----------:|-------------|
-| 19 | **Remove Duplicates from Sorted List** | `Remove_Duplicates_from_Sorted_List.java` | `O(n)` | `O(k)` | 🟢 Easy | Iterates through a sorted array and collects only the **duplicate** values (elements appearing more than once), removing redundant copies. |
+| 20 | **Remove Duplicates from Sorted List** | `Remove_Duplicates_from_Sorted_List.java` | `O(n)` | `O(k)` | 🟢 Easy | Iterates through a sorted array and collects only the **duplicate** values (elements appearing more than once), removing redundant copies. |
 
 <details>
 <summary>📖 <strong>Example — Remove Duplicates</strong></summary>
@@ -397,6 +398,8 @@ A quick-reference table of all algorithms with their time and space complexity:
 | Perfect Number | — | `O(n)` | — | `O(1)` |
 | Ugly Number | — | `O(log n)` | — | `O(1)` |
 | Power of Four | — | `O(log₄ n)` | — | `O(1)` |
+| Fairy Candy Swap | — | `O(n * m)` | — | `O(n + m)` |
+| Character Frequency | — | `O(n)` | — | `O(k)` |
 | Isomorphic Strings | — | `O(n)` | — | `O(k)` |
 | Palindrome | — | `O(n)` | — | `O(n)` |
 | Reverse String | — | `O(n)` | — | `O(1)` |
